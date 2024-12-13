@@ -1,0 +1,54 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download File</title>
+</head>
+<body>
+    <h1>Download File</h1>
+
+    <!-- Single textarea for input -->
+    <label for="fileContent">Enter Content:</label><br>
+    <textarea id="fileContent" rows="10" cols="50" placeholder="Enter your content here..."></textarea><br><br>
+
+    <!-- Dropdown to select the file type (HTML, CSS, or JS) -->
+    <label for="fileType">Choose File Type:</label><br>
+    <select id="fileType">
+        <option value="html">HTML</option>
+        <option value="css">CSS</option>
+        <option value="js">JavaScript</option>
+    </select><br><br>
+
+    <label for="fileName">Enter File Name (without extension):</label><br>
+    <input type="text" id="fileName" placeholder="Enter file name"><br><br>
+
+    <button id="downloadBtn">Download File</button>
+
+    <script>
+        document.getElementById('downloadBtn').addEventListener('click', function() {
+            const content = document.getElementById('fileContent').value;
+            const fileName = document.getElementById('fileName').value || "project"; // Default name if not entered
+            const fileType = document.getElementById('fileType').value;
+            
+            // Set file extension based on selected type
+            let fileExtension = ".html";
+            if (fileType === "css") {
+                fileExtension = ".css";
+            } else if (fileType === "js") {
+                fileExtension = ".js";
+            }
+
+            // Create a Blob with the content and trigger the download
+            const blob = new Blob([content], { type: 'text/plain' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = fileName + fileExtension;
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Table</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        table, th, td {
+            border: 1px solid #ccc;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+    </style>
+</head>
+<body>
+    <h2>DOM Manipulation</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Element</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>document.getElementById()</td><td>Selects an element by its ID.</td></tr>
+            <tr><td>document.querySelector()</td><td>Selects the first element that matches a CSS selector.</td></tr>
+            <tr><td>document.querySelectorAll()</td><td>Selects all elements that match a CSS selector.</td></tr>
+            <tr><td>document.createElement()</td><td>Creates a new HTML element.</td></tr>
+            <tr><td>element.appendChild()</td><td>Appends a node as the last child of an element.</td></tr>
+            <tr><td>element.removeChild()</td><td>Removes a child node from an element.</td></tr>
+            <tr><td>element.setAttribute()</td><td>Sets the value of an attribute on the specified element.</td></tr>
+            <tr><td>element.getAttribute()</td><td>Gets the value of an attribute on the specified element.</td></tr>
+            <tr><td>element.classList.add()</td><td>Adds one or more class names to an element.</td></tr>
+            <tr><td>element.classList.remove()</td><td>Removes one or more class names from an element.</td></tr>
+            <tr><td>element.classList.toggle()</td><td>Toggles a class name on or off for an element.</td></tr>
+        </tbody>
+    </table>
+
+    <h2>Event Handling</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Element</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>addEventListener()</td><td>Attaches an event handler to an element.</td></tr>
+            <tr><td>removeEventListener()</td><td>Removes an event handler from an element.</td></tr>
+            <tr><td>event.preventDefault()</td><td>Prevents the default action of the event.</td></tr>
+            <tr><td>event.stopPropagation()</td><td>Stops the event from propagating up the DOM tree.</td></tr>
+            <tr><td>onclick</td><td>Event that fires when an element is clicked.</td></tr>
+            <tr><td>onmouseover</td><td>Event that fires when the mouse is moved over an element.</td></tr>
+            <tr><td>onmouseout</td><td>Event that fires when the mouse is moved out of an element.</td></tr>
+            <tr><td>onkeydown</td><td>Event that fires when a key is pressed down.</td></tr>
+            <tr><td>onkeyup</td><td>Event that fires when a key is released.</td></tr>
+            <tr><td>onsubmit</td><td>Event that fires when a form is submitted.</td></tr>
+        </tbody>
+    </table>
+
+    <h2>Functions and Control Structures</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Element</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>function</td><td>Defines a function.</td></tr>
+            <tr><td>return</td><td>Exits a function and returns a value.</td></tr>
+            <tr><td>if/else</td><td>Defines a conditional statement.</td></tr>
+            <tr><td>for</td><td>Creates a loop that is executed as long as a condition is true.</td></tr>
+            <tr><td>while</td><td>Creates a loop that is executed as long as a condition is true.</td></tr>
+            <tr><td>do/while</td><td>Creates a loop that is executed at least once, and then continues to loop as long as a condition is true.</td></tr>
+            <tr><td>switch</td><td>Evaluates an expression, matching the expression's value to a case clause, and executes statements associated with that case.</td></tr>
+            <tr><td>try/catch</td><td>Marks a block of statements to try, and specifies a response, should an exception be thrown.</td></tr>
+            <tr><td>async/await</td><td>Used to handle asynchronous operations.</td></tr>
+        </tbody>
+    </table>
+
+    <h2>Arrays and Looping</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Element</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>Array</td><td>Creates a new array.</td></tr>
+            <tr><td>array.push()</td><td>Adds one or more elements to the end of an array.</td></tr>
+            <tr><td>array.pop()</td><td>Removes the last element from an array and returns that element.</td></tr>
+            <tr><td>array.shift()</td><td>Removes the first element from an array and returns that element.</td></tr>
+            <tr><td>array.unshift()</td><td>Adds one or more elements to the beginning of an array.</td></tr>
+            <tr><td>array.map()</td><td>Creates a new array with the results of calling a function on every element in the array.</td></tr>
+            <tr><td>array.filter()</td><td>Creates a new array with all elements that pass the test implemented by the provided function.</td></tr>
+            <tr><td>array.reduce()</td><td>Applies a function against an accumulator and each element in the array to reduce it to a single value.</td></tr>
+            <tr><td>array.forEach()</td><td>Executes a provided function once for each array element.</td></tr>
+            <tr><td>array.find()</td><td>Returns the value of the first element in the array that satisfies the provided testing function.</td></tr>
+        </tbody>
+    </table>
+
+    <h2>Objects and JSON</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Element</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>Object</td><td>Creates a new object.</td></tr>
+            <tr><td>object.key</td><td>Accesses a property of an object.</td></tr>
+            <tr><td>object.method()</td><td>Calls a method on an object.</td></tr>
+            <tr><td>JSON.stringify()</td><td>Converts a JavaScript object or value to a JSON string.</td></tr>
+            <tr><td>JSON.parse()</td><td>Parses a JSON string, constructing the JavaScript value or object described by the string.</td></tr>
+            <tr><td>Object.keys()</td><td>Returns an array of a given object's own enumerable property names.</td></tr>
+            <tr><td>Object.values()</td><td>Returns an array of a given object's own enumerable property values.</td></tr>
+            <tr><td>Object.entries()</td><td>Returns an array of a given object's own enumerable property [key, value] pairs.</td></tr>
+            <tr><td>object.hasOwnProperty()</td><td>Returns a boolean indicating whether the object has the specified property as its own property.</td></tr>
+            <tr><td>class</td><td>Defines a class in JavaScript, which is a blueprint for creating objects.</td></tr>
+        </tbody>
+    </table>
+
+    <h2>Miscellaneous</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Element</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>console.log()</td><td>Outputs a message to the web console.</td></tr>
+            <tr><td>alert()</td><td>Displays an alert dialog with a specified message and an OK button.</td></tr>
+            <tr><td>confirm()</td><td>Displays a dialog with a specified message, along with OK and Cancel buttons, and returns true or false depending on the user’s choice.</td></tr>
+            <tr><td>prompt()</td><td>Displays a dialog with a specified message, an input field, and OK and Cancel buttons, returning the value entered by the user.</td></tr>
+            <tr><td>setTimeout()</td><td>Executes a function or a block of code after a specified delay in milliseconds.</td></tr>
+            <tr><td>clearTimeout()</td><td>Clears a timeout previously established by setTimeout()</td></tr>
+            <tr><td>setInterval()</td><td>Repeatedly executes a function or a block of code with a fixed time delay between each call.</td></tr>
+            <tr><td>clearInterval()</td><td>Clears an interval previously established by setInterval()</td></tr>
+            <tr><td>Promise</td><td>An object representing the eventual completion or failure of an asynchronous operation.</td></tr>
+            <tr><td>async/await</td><td>Syntax for working with asynchronous code, making it easier to read and write.</td></tr>
+            <tr><td>fetch()</td><td>Used to make network requests to servers.</td></tr>
+            <tr><td>Math</td><td>Provides properties and methods for mathematical constants and functions.</td></tr>
+            <tr><td>window.location</td><td>Provides information about the current URL and allows redirection.</td></tr>
+            <tr><td>window.history</td><td>Provides access to the browser's session history.</td></tr>
+            <tr><td>window.localStorage</td><td>Provides access to a local storage object for storing data with no expiration time.</td></tr>
+            <tr><td>window.sessionStorage</td><td>Provides access to a session storage object for storing data for the duration of the page session.</td></tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
