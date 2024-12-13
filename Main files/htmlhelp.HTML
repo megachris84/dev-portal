@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Table</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        table, th, td {
+            border: 1px solid #ccc;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+    </style>
+</head>
+<body>
+    <h2>Structural Elements</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Element</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>&lt;html&gt;</td><td>Root element of an HTML document.</td></tr>
+            <tr><td>&lt;head&gt;</td><td>Contains metadata and links to external resources.</td></tr>
+            <tr><td>&lt;body&gt;</td><td>Contains the content of an HTML document.</td></tr>
+            <tr><td>&lt;header&gt;</td><td>Represents introductory content, typically a group of introductory or navigational aids.</td></tr>
+            <tr><td>&lt;footer&gt;</td><td>Represents a footer for its nearest sectioning content or sectioning root element.</td></tr>
+            <tr><td>&lt;section&gt;</td><td>Represents a standalone section which doesn’t have a more specific semantic element to represent it.</td></tr>
+            <tr><td>&lt;article&gt;</td><td>Represents a self-contained composition in a document.</td></tr>
+            <tr><td>&lt;aside&gt;</td><td>Represents a portion of a document whose content is only indirectly related to the document's main content.</td></tr>
+            <tr><td>&lt;nav&gt;</td><td>Represents a section of a page that links to other pages or to parts within the page: a section with navigation links.</td></tr>
+            <tr><td>&lt;div&gt;</td><td>A generic container for flow content that by itself does not represent anything.</td></tr>
+            <tr><td>&lt;main&gt;</td><td>Represents the dominant content of the &lt;body&gt; of a document.</td></tr>
+        </tbody>
+    </table>
+
+    <h2>Text Content Elements</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Element</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>&lt;h1&gt; - &lt;h6&gt;</td><td>Heading elements, &lt;h1&gt; is the highest (or most important) level and &lt;h6&gt; is the lowest.</td></tr>
+            <tr><td>&lt;p&gt;</td><td>Represents a paragraph of text.</td></tr>
+            <tr><td>&lt;span&gt;</td><td>A generic inline container for phrasing content, which does not inherently represent anything.</td></tr>
+            <tr><td>&lt;strong&gt;</td><td>Represents text of strong importance.</td></tr>
+            <tr><td>&lt;em&gt;</td><td>Represents emphasized text, often displayed in italics.</td></tr>
+            <tr><td>&lt;blockquote&gt;</td><td>Represents a section that is quoted from another source.</td></tr>
+            <tr><td>&lt;ul&gt;</td><td>Represents an unordered list of items.</td></tr>
+            <tr><td>&lt;ol&gt;</td><td>Represents an ordered list of items.</td></tr>
+            <tr><td>&lt;li&gt;</td><td>Represents an item in a list.</td></tr>
+            <tr><td>&lt;br&gt;</td><td>Produces a line break in text (carriage-return).</td></tr>
+            <tr><td>&lt;hr&gt;</td><td>Represents a thematic break between paragraphs of a text, usually a horizontal line.</td></tr>
+            <tr><td>&lt;pre&gt;</td><td>Represents preformatted text, where whitespace is preserved.</td></tr>
+            <tr><td>&lt;code&gt;</td><td>Represents a fragment of computer code.</td></tr>
+            <tr><td>&lt;mark&gt;</td><td>Represents text which is highlighted for reference purposes.</td></tr>
+        </tbody>
+    </table>
+
+    <h2>Form Elements</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Element</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>&lt;form&gt;</td><td>Represents a document section that contains interactive controls for submitting information.</td></tr>
+            <tr><td>&lt;input&gt;</td><td>Represents a typed data field allowing the user to enter data.</td></tr>
+            <tr><td>&lt;textarea&gt;</td><td>Represents a multi-line plain-text editing control.</td></tr>
+            <tr><td>&lt;button&gt;</td><td>Represents a clickable button.</td></tr>
+            <tr><td>&lt;select&gt;</td><td>Represents a control that provides a menu of options.</td></tr>
+            <tr><td>&lt;option&gt;</td><td>Represents an option in a &lt;select&gt; element.</td></tr>
+            <tr><td>&lt;label&gt;</td><td>Represents a caption for an item in a user interface.</td></tr>
+            <tr><td>&lt;fieldset&gt;</td><td>Used to group several controls and labels within a web form.</td></tr>
+            <tr><td>&lt;legend&gt;</td><td>Represents a caption for the content of its parent &lt;fieldset&gt;.</td></tr>
+            <tr><td>&lt;datalist&gt;</td><td>Represents a list of options for the &lt;input&gt; element.</td></tr>
+            <tr><td>&lt;output&gt;</td><td>Represents the result of a calculation or user action.</td></tr>
+            <tr><td>&lt;progress&gt;</td><td>Represents the completion progress of a task.</td></tr>
+            <tr><td>&lt;meter&gt;</td><td>Represents a scalar measurement within a known range.</td></tr>
+        </tbody>
+    </table>
+
+    <h2>Interactive Elements</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Element</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>&lt;a&gt;</td><td>Represents a hyperlink, linking to another resource.</td></tr>
+            <tr><td>&lt;button&gt;</td><td>Represents a clickable button.</td></tr>
+            <tr><td>&lt;details&gt;</td><td>Represents a disclosure widget from which the user can obtain additional information.</td></tr>
+            <tr><td>&lt;summary&gt;</td><td>Represents a summary, legend, or caption for a &lt;details&gt; element.</td></tr>
+            <tr><td>&lt;dialog&gt;</td><td>Represents a dialog box or window.</td></tr>
+            <tr><td>&lt;menu&gt;</td><td>Represents a list of commands that a user can perform or activate.</td></tr>
+        </tbody>
+    </table>
+
+    <h2>Media Elements</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Element</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>&lt;img&gt;</td><td>Embeds an image in the document.</td></tr>
+            <tr><td>&lt;audio&gt;</td><td>Embeds sound content in a document.</td></tr>
+            <tr><td>&lt;video&gt;</td><td>Embeds a media player which supports video playback.</td></tr>
+            <tr><td>&lt;picture&gt;</td><td>Serves as a container for zero or more &lt;source&gt; elements and one &lt;img&gt; element.</td></tr>
+            <tr><td>&lt;source&gt;</td><td>Specifies multiple media resources for media elements.</td></tr>
+                        <tr><td>&lt;track&gt;</td><td>Specifies text tracks for &lt;video&gt; and &lt;audio&gt; elements.</td></tr>
+            <tr><td>&lt;map&gt;</td><td>Defines an image map, allowing clickable areas in an image.</td></tr>
+            <tr><td>&lt;area&gt;</td><td>Defines a clickable area inside an image map.</td></tr>
+            <tr><td>&lt;svg&gt;</td><td>Defines a container for SVG graphics.</td></tr>
+            <tr><td>&lt;object&gt;</td><td>Embeds an external resource, such as an image, video, or a browser plug-in.</td></tr>
+            <tr><td>&lt;embed&gt;</td><td>Embeds external content, typically multimedia.</td></tr>
+            <tr><td>&lt;param&gt;</td><td>Defines parameters for an &lt;object&gt; element.</td></tr>
+            <tr><td>&lt;iframe&gt;</td><td>Embeds another HTML page within the current page.</td></tr>
+        </tbody>
+    </table>
+
+    <h2>Table Elements</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Element</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>&lt;table&gt;</td><td>Represents a table, used to arrange data in rows and columns.</td></tr>
+            <tr><td>&lt;tr&gt;</td><td>Represents a row of cells in a table.</td></tr>
+            <tr><td>&lt;td&gt;</td><td>Represents a cell in a table.</td></tr>
+            <tr><td>&lt;th&gt;</td><td>Represents a header cell in a table.</td></tr>
+            <tr><td>&lt;thead&gt;</td><td>Groups the header content in a table.</td></tr>
+            <tr><td>&lt;tbody&gt;</td><td>Groups the body content in a table.</td></tr>
+            <tr><td>&lt;tfoot&gt;</td><td>Groups the footer content in a table.</td></tr>
+            <tr><td>&lt;caption&gt;</td><td>Represents a title or explanation for the table.</td></tr>
+            <tr><td>&lt;colgroup&gt;</td><td>Groups columns in a table for formatting.</td></tr>
+            <tr><td>&lt;col&gt;</td><td>Specifies column properties for each column within a &lt;colgroup&gt; element.</td></tr>
+        </tbody>
+    </table>
+
+    <h2>Semantic Elements</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Element</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>&lt;section&gt;</td><td>Represents a standalone section in a document, which doesn't have a more specific semantic element to represent it.</td></tr>
+            <tr><td>&lt;article&gt;</td><td>Represents a self-contained composition in a document, page, application, or site.</td></tr>
+            <tr><td>&lt;aside&gt;</td><td>Represents a portion of a document whose content is only indirectly related to the document's main content.</td></tr>
+            <tr><td>&lt;header&gt;</td><td>Represents introductory content, typically a group of introductory or navigational aids.</td></tr>
+            <tr><td>&lt;footer&gt;</td><td>Represents a footer for its nearest sectioning content or sectioning root element.</td></tr>
+            <tr><td>&lt;main&gt;</td><td>Represents the main content of the &lt;body&gt; of a document.</td></tr>
+            <tr><td>&lt;nav&gt;</td><td>Represents a section of a page that links to other pages or to parts within the page: a section with navigation links.</td></tr>
+            <tr><td>&lt;figure&gt;</td><td>Represents self-contained content, potentially with an optional caption, which is specified using the &lt;figcaption&gt; element.</td></tr>
+            <tr><td>&lt;figcaption&gt;</td><td>Represents a caption or legend for the content of its parent &lt;figure&gt; element.</td></tr>
+        </tbody>
+    </table>
+
+    <h2>Metadata Elements</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Element</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>&lt;title&gt;</td><td>Defines the title of the document, shown in the browser's title bar or tab.</td></tr>
+            <tr><td>&lt;meta&gt;</td><td>Represents metadata that cannot be represented by other HTML elements.</td></tr>
+            <tr><td>&lt;link&gt;</td><td>Specifies relationships between the current document and an external resource, typically used to link to stylesheets.</td></tr>
+            <tr><td>&lt;style&gt;</td><td>Contains style information for a document, typically CSS.</td></tr>
+            <tr><td>&lt;base&gt;</td><td>Specifies the base URL for relative URLs in the document.</td></tr>
+            <tr><td>&lt;script&gt;</td><td>Used to embed or reference executable script.</td></tr>
+            <tr><td>&lt;noscript&gt;</td><td>Defines alternative content to be displayed when a script is not executed.</td></tr>
+            <tr><td>&lt;template&gt;</td><td>Defines a container for content that should be hidden when the page loads, but can be instantiated later using JavaScript.</td></tr>
+            <tr><td>&lt;slot&gt;</td><td>Defines a placeholder inside a Web Component that users can fill with their own markup.</td></tr>
+            <tr><td>&lt;basefont&gt;</td><td>Specifies a default font size, color, and face for all text in a document (deprecated).</td></tr>
+            <tr><td>&lt;bgsound&gt;</td><td>Specifies a sound to play while a document is being viewed (deprecated).</td></tr>
+            <tr><td>&lt;command&gt;</td><td>Defines a command that the user can invoke (not supported by any major browser).</td></tr>
+            <tr><td>&lt;content&gt;</td><td>Used in Shadow DOM as a placeholder for unknown content (deprecated).</td></tr>
+            <tr><td>&lt;dialog&gt;</td><td>Defines a dialog box or window.</td></tr>
+            <tr><td>&lt;shadow&gt;</td><td>Used to encapsulate the style and markup of a custom element (deprecated).</td></tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
